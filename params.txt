@@ -1,0 +1,60 @@
+#Do Commands
+
+doTophat	1
+doBwt	0
+doRSEM	1
+doPicard	1
+doBam2Tdf	1
+doCufflinks	1
+doRNASeqQC	1
+doCountrRNA	1
+doRSeQC	1
+
+#flags
+headDir	habenula
+igv_genome	/seq/regev_genome_portal/RESOURCES/zebrafish/Zv9/Zv9.genome
+read_len	25
+
+#Ref
+cuffRef	/seq/regev_genome_portal/RESOURCES/zebrafish/Zv9/Zv9.fa
+rRNA_fasta	/seq/regev_genome_portal/RESOURCES/zebrafish/Zv9/Zv9_rRNA.fa
+fasta	/seq/regev_genome_portal/RESOURCES/zebrafish/Zv9/Zv9.fa
+trans_bed	/seq/regev_genome_portal/RESOURCES/zebrafish/Zv9/Annotations/Zv9/Zv9.minus_selenocys.adj.bed
+
+#Tophat Args
+tophat_Path	/seq/regev_genome_portal/SOFTWARE/tophat2/current
+topMateDist	300
+topMateStd	500
+tophatTransIndex	/seq/regev_genome_portal/RESOURCES/zebrafish/Zv9/Annotations/Zv9/tophat_trans_index
+gtf	/seq/regev_genome_portal/RESOURCES/zebrafish/Zv9/Annotations/Zv9/Zv9.minus_selenocys.adj.gtf
+samtools_Path	/broad/software/free/Linux/redhat_6_x86_64/pkgs/samtools/samtools_1.1/bin
+
+#Picard Args
+
+picard_Path	/seq/regev_genome_portal/SOFTWARE/Picard/current
+refFlat	/seq/regev_genome_portal/RESOURCES/zebrafish/Zv9/Annotations/Zv9/Zv9.ds.refFlat
+riboList	/seq/regev_genome_portal/RESOURCES/zebrafish/Zv9/Annotations/Zv9/Zv9.minus_selenocys.adj.rRNA.interval_list
+
+rsemRef	/seq/regev_genome_portal/RESOURCES/mouse/mm9/Annotations/mm9_ucsc_genomeStudio_genes/rsem_trans_index
+tophatRNA	/seq/regev_genome_portal/RESOURCES/mouse/mm9/Annotations/mm9_ucsc_genomeStudio_genes/tophat_trans_index
+
+#igvtools
+
+igvtools_Path	/seq/regev_genome_portal/SOFTWARE/IGVtools/IGVTools
+
+#RSEM
+rsem_Path	/broad/software/free/Linux/redhat_6_x86_64/pkgs/rsem/rsem-1.2.19
+bwt_Path	/seq/regev_genome_portal/SOFTWARE/bowtie/bowtie-1.0.0
+rsemTransIndex	/seq/regev_genome_portal/RESOURCES/zebrafish/Zv9/Annotations/Zv9/rsem_trans_index
+
+#Cufflinks
+cufflinks_Path	/seq/regev_genome_portal/SOFTWARE/cufflinks/current
+
+#RNA-SeQC
+rna_seQC_Path	/seq/regev_genome_portal/SOFTWARE/BIN
+
+#BWA
+bwa_Path	/broad/software/free/Linux/redhat_6_x86_64/pkgs/bwa_0.7.10
+
+#RSeQC Path
+RSeQC_Path	/home/unix/karthik/.local/bin
